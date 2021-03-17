@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif, monospace;
+}
+
+.container {
+  display: grid;
+  margin: 0 2vw;
+  grid-column: 50vw 50vw;
+  grid-template-rows: 25vh 1fr;
+  grid-template-areas:
+    "busca busca"
+    "users statistics";
+}
+.busca-usuario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.6em 0;
+  grid-area: busca;
+}
+
+label {
+  font-size: 1.3rem;
+  margin: 0.3em 0;
+}
+
+input[type="text"] {
+  width: 50%;
+  font-size: 1.3rem;
+  padding: 0.3em;
+  outline-color: rgb(95, 224, 69);
+}
+
+.no-user,
+.user {
+    
+  align-items: center;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.usuario-nao-encontrado {
+    display: flex;
+    padding-top: 20px;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.usuarios-encontrados {
+  display: flex;
+  align-items: center;
+  padding: 0 0 20px 20px;
+}
+
+.thumb {
+  border-radius: 50%;
+  margin: 10px 10px 0 0;
+}
+.users {
+  border: 1px solid #000;
+  grid-area: users;
+}
+.statistics {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border: 1px solid #000;
+  grid-area: statistics;
+}
+
+.statistics h2 {
+    padding: 10px 0;
+}
+
+.statistics p {
+    font-size: 1.2rem;
+    padding: 2px;
+}
+
+
+h1 {
+  text-align: center;
+}
